@@ -76,7 +76,7 @@ This showed that two documents had `productId: 20`.
 ``` javascript
 db.products.upadteOne(
     { productId: 20 },
-    { $set: { "seller,sellername": "Aditya store" } }
+    { $set: { "seller,sellername": "Pranjal store" } }
 )
 ```
 
@@ -95,7 +95,7 @@ comma (`,`), is used between nested field names.
 ``` javascript
 db.products.updateOne(
     { productId: 20 },
-    { $set: { "seller.sellerName": "Aditya Store" } }
+    { $set: { "seller.sellerName": "Pranjal Store" } }
 )
 ```
 
@@ -118,7 +118,7 @@ The first Product 20 document now contains:
 ``` javascript
 seller: {
     sellerId: 1020,
-    sellerName: "Aditya Store"
+    sellerName: "Pranjal Store"
 }
 ```
 
@@ -187,7 +187,7 @@ The final visible state included:
     tags: \["electronics", "featured"],
     seller: {
         sellerId: 1020,
-        sellerName: "Aditya Store"
+        sellerName: "Pranjal Store"
     }
 }
 ```
@@ -324,7 +324,7 @@ Example:
 ``` javascript
 db.products.updateOne(
     { productId: 20 },
-    { $set: { "seller.sellerName": "Aditya Store" } }
+    { $set: { "seller.sellerName": "Pranjal Store" } }
 )
 ```
 
